@@ -13,3 +13,9 @@ double metres_to_centimetres(double metres)
 	double centimetres;
 	return centimetres * centimetres;
 }
+
+double kilometres_to_metres(double kilometres)
+{
+	double metres;
+	return metres * METRES_IN_KILOMETRE;
+}
