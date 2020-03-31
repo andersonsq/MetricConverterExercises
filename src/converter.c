@@ -42,3 +42,11 @@ double centimetres_to_metres(double centimetres)
 	return metres;
 	//return metres / CENTIMETRES_IN_METRE;
 }
+
+double metres_to_kilometres(double metres)
+{
+	double kilometres;
+	kilometres = metres / METRES_IN_KILOMETRE;
+	return kilometres;
+	//return kilometres / METRES_IN_KILOMETRE;
+}
