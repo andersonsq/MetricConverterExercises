@@ -50,3 +50,11 @@ double metres_to_kilometres(double metres)
 	return kilometres;
 	//return kilometres / METRES_IN_KILOMETRE;
 }
+
+double metres_to_millimetres(double metres)
+{
+	double millimetres;
+	millimetres = metres * METRES_IN_KILOMETRE;
+	return millimetres;
+	//return metres * METRES_IN_KILOMETRE;
+}
