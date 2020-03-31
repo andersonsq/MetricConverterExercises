@@ -7,3 +7,9 @@ double centimetres_to_millimetres(double centimetres)
 	return millimetres;
 	//return centimetres * MILLIMETRES_IN_CENTIMETRE;
 }
+
+double metres_to_centimetres(double metres)
+{
+	double centimetres;
+	return centimetres * centimetres;
+}
