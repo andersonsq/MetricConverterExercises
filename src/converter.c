@@ -1,5 +1,6 @@
 #include "converter.h"
 
+/*TASK 2*/
 double centimetres_to_millimetres(double centimetres)
 {	
 	double millimetres;	
@@ -23,3 +24,15 @@ double kilometres_to_metres(double kilometres)
 	return metres;
 	//return metres * METRES_IN_KILOMETRE;
 }
+
+/*TASK 3*/
+
+double millimetres_to_centimetres(double millimetres)
+{
+	double centimetres;
+	centimetres = millimetres / MILLIMETRES_IN_CENTIMETRE;
+	return centimetres;
+	//return metres * METRES_IN_KILOMETRE;
+}
+
+
