@@ -11,11 +11,15 @@ double centimetres_to_millimetres(double centimetres)
 double metres_to_centimetres(double metres)
 {
 	double centimetres;
-	return centimetres * centimetres;
+	centimetres = metres * CENTIMETRES_IN_METRE;
+	return centimetres;
+	//return metres * CENTIMETRES_IN_METRE;
 }
 
 double kilometres_to_metres(double kilometres)
 {
 	double metres;
-	return metres * METRES_IN_KILOMETRE;
+	metres = kilometres * METRES_IN_KILOMETRE;
+	return metres;
+	//return metres * METRES_IN_KILOMETRE;
 }
