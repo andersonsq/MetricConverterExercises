@@ -76,3 +76,11 @@ double kilometres_to_millimetres(double kilometres)
 	return millimetres;
 	//return kilometres * (METRES_IN_KILOMETRE * 1000);
 }
+
+double millimetres_to_kilometres(double millimetres)
+{
+	double kilometres;
+	kilometres = millimetres / (METRES_IN_KILOMETRE * 1000)		//kilometres / (METRES_IN_KILOMETRE * METRES_IN_KILOMETRE)
+	return kilometres;
+	//return kilometres / (METRES_IN_KILOMETRE * 1000);
+}
