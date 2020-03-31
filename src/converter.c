@@ -32,7 +32,13 @@ double millimetres_to_centimetres(double millimetres)
 	double centimetres;
 	centimetres = millimetres / MILLIMETRES_IN_CENTIMETRE;
 	return centimetres;
-	//return metres * METRES_IN_KILOMETRE;
+	//return centimetres / METRES_IN_KILOMETRE;
 }
 
-
+double centimetres_to_metres(double centimetres)
+{
+	double metres;
+	metres = centimetres / CENTIMETRES_IN_METRE;
+	return metres;
+	//return metres / CENTIMETRES_IN_METRE;
+}
