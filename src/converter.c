@@ -92,3 +92,11 @@ double kilometres_to_centimetres(double kilometres)
 	return centimetres;
 	//return kilometres * (METRES_IN_KILOMETRE * 100);
 }
+
+double centimetres_to_kilometres(double centimetres)
+{
+	double kilometres;
+	kilometres = centimetres / (METRES_IN_KILOMETRE * 100);		//centimetres / (METRES_IN_KILOMETRE * 100);
+	return kilometres;
+	//return centimetres / (METRES_IN_KILOMETRE * 100);
+}
