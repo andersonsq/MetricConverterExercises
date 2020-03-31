@@ -72,7 +72,7 @@ double millimetres_to_metres(double millimetres)
 double kilometres_to_millimetres(double kilometres)
 {
 	double millimetres;
-	millimetres = kilometres * (METRES_IN_KILOMETRE * 1000)		//kilometres * (METRES_IN_KILOMETRE * METRES_IN_KILOMETRE)
+	millimetres = kilometres * (METRES_IN_KILOMETRE * 1000);		//kilometres * (METRES_IN_KILOMETRE * METRES_IN_KILOMETRE)
 	return millimetres;
 	//return kilometres * (METRES_IN_KILOMETRE * 1000);
 }
@@ -80,7 +80,15 @@ double kilometres_to_millimetres(double kilometres)
 double millimetres_to_kilometres(double millimetres)
 {
 	double kilometres;
-	kilometres = millimetres / (METRES_IN_KILOMETRE * 1000)		//kilometres / (METRES_IN_KILOMETRE * METRES_IN_KILOMETRE)
+	kilometres = millimetres / (METRES_IN_KILOMETRE * 1000);		//kilometres / (METRES_IN_KILOMETRE * METRES_IN_KILOMETRE)
 	return kilometres;
 	//return kilometres / (METRES_IN_KILOMETRE * 1000);
+}
+
+double kilometres_to_centimetres(double kilometres)
+{
+	double centimetres;
+	centimetres = kilometres * (METRES_IN_KILOMETRE * 100);		//kilometres * (METRES_IN_KILOMETRE * CENTIMETRES_IN_METRE);	
+	return centimetres;
+	//return kilometres * (METRES_IN_KILOMETRE * 100);
 }
