@@ -64,8 +64,15 @@ double metres_to_millimetres(double metres)
 double millimetres_to_metres(double millimetres)
 {
 	double metres;
-	metres = metres / METRES_IN_KILOMETRE;
+	metres = millimetres / METRES_IN_KILOMETRE;
 	return metres;
 	//return metres / METRES_IN_KILOMETRE;
 }
 
+double kilometres_to_millimetres(double kilometres)
+{
+	double millimetres;
+	millimetres = kilometres * (METRES_IN_KILOMETRE * 1000)		//kilometres * (METRES_IN_KILOMETRE * METRES_IN_KILOMETRE)
+	return millimetres;
+	//return kilometres * (METRES_IN_KILOMETRE * 1000);
+}
