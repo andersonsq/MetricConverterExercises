@@ -53,6 +53,7 @@ double metres_to_kilometres(double metres)
 
 /*TASK 4*/
 
+/*
 double metres_to_millimetres(double metres)
 {	
 	double millimetres, centimetres;
@@ -60,6 +61,7 @@ double metres_to_millimetres(double metres)
 	millimetres = centimetres_to_millimetres(centimetres);
 	return millimetres;
 }
+
 
 /*
 double metres_to_millimetres(double metres)
