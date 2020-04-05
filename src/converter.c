@@ -53,16 +53,13 @@ double metres_to_kilometres(double metres)
 
 /*TASK 4*/
 
-/*
 double metres_to_millimetres(double metres)
 {	
 	double millimetres, centimetres;
-	metres_to_centimetres(metres);
+	centimetres = metres_to_centimetres(metres);
 	millimetres = centimetres_to_millimetres(centimetres);
 	return millimetres;
 }
-
-
 /*
 double metres_to_millimetres(double metres)
 {
@@ -71,14 +68,24 @@ double metres_to_millimetres(double metres)
 	return millimetres;
 	//return metres * METRES_IN_KILOMETRE;
 }
+*/
 
 double millimetres_to_metres(double millimetres)
+{
+	double centimetres, metres;
+	centimetres = centimetres_to_millimetres(millimetres);
+	metres = centimetres_to_metres(centimetres);
+	return metres;
+}
+
+/*double millimetres_to_metres(double millimetres)
 {
 	double metres;
 	metres = millimetres / METRES_IN_KILOMETRE;
 	return metres;
 	//return metres / METRES_IN_KILOMETRE;
 }
+*/
 
 double kilometres_to_millimetres(double kilometres)
 {
@@ -111,4 +118,4 @@ double centimetres_to_kilometres(double centimetres)
 	return kilometres;
 	//return centimetres / (METRES_IN_KILOMETRE * 100);
 }
-*/
+
