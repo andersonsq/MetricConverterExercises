@@ -73,7 +73,7 @@ double metres_to_millimetres(double metres)
 double millimetres_to_metres(double millimetres)
 {
 	double centimetres, metres;
-	centimetres = centimetres_to_millimetres(millimetres);
+	centimetres = millimetres to centimetres(millimetres);
 	metres = centimetres_to_metres(centimetres);
 	return metres;
 }
