@@ -125,11 +125,21 @@ double millimetres_to_kilometres(double millimetres)
 
 double kilometres_to_centimetres(double kilometres)
 {
+	double metres, centimetres;
+	metres = kilometres_to_metres(kilometres);
+	centimetres = metres_to_centimetres(metres);
+	return centimetres;
+}
+
+/*
+double kilometres_to_centimetres(double kilometres)
+{
 	double centimetres;
 	centimetres = kilometres * (METRES_IN_KILOMETRE * 100);		//kilometres * (METRES_IN_KILOMETRE * CENTIMETRES_IN_METRE);	
 	return centimetres;
 	//return kilometres * (METRES_IN_KILOMETRE * 100);
 }
+*/
 
 double centimetres_to_kilometres(double centimetres)
 {
