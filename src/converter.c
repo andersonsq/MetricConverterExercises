@@ -89,12 +89,21 @@ double millimetres_to_metres(double millimetres)
 
 double kilometres_to_millimetres(double kilometres)
 {
+	double metres, millimetres;
+	metres = kilometres_to_metres(metres);
+	millimetres = metres_to_millimetres(millimetres);
+	return millimetres;
+}
+
+/*
+double kilometres_to_millimetres(double kilometres)
+{
 	double millimetres;
 	millimetres = kilometres * (METRES_IN_KILOMETRE * 1000);		//kilometres * (METRES_IN_KILOMETRE * METRES_IN_KILOMETRE)
 	return millimetres;
 	//return kilometres * (METRES_IN_KILOMETRE * 1000);
 }
-
+*/
 double millimetres_to_kilometres(double millimetres)
 {
 	double kilometres;
