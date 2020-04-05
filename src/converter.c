@@ -143,9 +143,17 @@ double kilometres_to_centimetres(double kilometres)
 
 double centimetres_to_kilometres(double centimetres)
 {
+	double metres, kilometres;
+	metres = centimetres_to_metres(centimetres);
+	kilometres = metres_to_kilometres(metres);
+	return kilometres;
+}
+
+/*double centimetres_to_kilometres(double centimetres)
+{
 	double kilometres;
 	kilometres = centimetres / (METRES_IN_KILOMETRE * 100);		//centimetres / (METRES_IN_KILOMETRE * 100);
 	return kilometres;
 	//return centimetres / (METRES_IN_KILOMETRE * 100);
 }
-
+*/
