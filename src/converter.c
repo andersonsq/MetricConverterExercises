@@ -104,6 +104,16 @@ double kilometres_to_millimetres(double kilometres)
 	//return kilometres * (METRES_IN_KILOMETRE * 1000);
 }
 */
+
+double millimetres_to_kilometres(double millimetres)
+{
+	double metres, kilometres;
+	metres = kilometres_to_metres(kilometres);
+	kilometres = metres_to_kilometres(metres);
+	return kilometres;
+}
+
+/*
 double millimetres_to_kilometres(double millimetres)
 {
 	double kilometres;
@@ -111,6 +121,7 @@ double millimetres_to_kilometres(double millimetres)
 	return kilometres;
 	//return kilometres / (METRES_IN_KILOMETRE * 1000);
 }
+*/
 
 double kilometres_to_centimetres(double kilometres)
 {
