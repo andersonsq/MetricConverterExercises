@@ -108,7 +108,7 @@ double kilometres_to_millimetres(double kilometres)
 double millimetres_to_kilometres(double millimetres)
 {
 	double metres, kilometres;
-	metres = kilometres_to_metres(kilometres);
+	metres = millimetres_to_metres(kilometres);
 	kilometres = metres_to_kilometres(metres);
 	return kilometres;
 }
